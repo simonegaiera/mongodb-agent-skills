@@ -19,7 +19,7 @@ Copy the content of `AGENTS.md` into your project's root `AGENTS.md`. This gives
 
 ### Agent Skills CLI
 ```bash
-npx skills add romiluz13/mongodb-agent-skills --skill mongodb-query-and-index-optimize
+npx skills add simonegaiera/mongodb-agent-skills --skill mongodb-query-and-index-optimize
 ```
 
 ## Getting Started

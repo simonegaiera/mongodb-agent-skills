@@ -4,7 +4,7 @@ This file provides guidance to AI coding agents when working with code in this r
 
 ## Repository Overview
 
-A collection of agent skills for MongoDB development. Skills are packaged instructions that extend any AI coding agent's capabilities for schema design, query/index optimization, AI/vector search, and transaction consistency.
+A collection of agent skills for MongoDB development. Skills are packaged instructions that extend any AI coding agent's capabilities for schema design, query/index optimization, AI/vector search, transaction consistency, and full-stack application development (frontend, backend, agentic AI).
 
 ## Creating a New Skill
 

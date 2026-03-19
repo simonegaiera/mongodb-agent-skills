@@ -2,7 +2,7 @@
 
 **Packaged MongoDB best practices for AI coding agents and LLMs.**
 
-This repository provides structured, up-to-date guidance across four core MongoDB domains, designed to bridge the knowledge gap where AI assistants have outdated or incorrect information about MongoDB's evolving capabilities.
+This repository provides structured, up-to-date guidance across seven MongoDB domains — four database-focused and three application-focused — designed to bridge the knowledge gap where AI assistants have outdated or incorrect information about MongoDB's evolving capabilities.
 
 ## 🎯 What Are Agent Skills?
 
@@ -43,6 +43,27 @@ Query and index optimization best practices.
 **Use when**: Implementing multi-document transactions, ensuring data consistency, handling concurrent operations.
 
 **Key topics**: ACID guarantees, transaction patterns, read/write concerns, retryable operations.
+
+### 5. [mongodb-application-frontend](./mongodb-application-frontend/)
+Frontend application standards with Next.js, React, and Tailwind CSS.
+
+**Use when**: Building a frontend application that connects to a MongoDB backend.
+
+**Key topics**: App Router, server/client components, global CSS with Tailwind, component patterns, TypeScript.
+
+### 6. [mongodb-application-backend](./mongodb-application-backend/)
+Backend application standards with Python, FastAPI, and Motor.
+
+**Use when**: Building a Python backend API backed by MongoDB.
+
+**Key topics**: FastAPI project structure, Motor async driver, mandatory seed script, Pydantic models, API patterns.
+
+### 7. [mongodb-application-agentic](./mongodb-application-agentic/)
+Standards for building agentic AI applications and chatbots with MongoDB.
+
+**Use when**: Building chatbots, conversational agents, or agentic AI workflows with MongoDB.
+
+**Key topics**: LangChain + LangGraph, MongoDBSaver (checkpointing), MongoDBStore (long-term memory), MongoDB MCP, Claude prompting best practices.
 
 ## 🚀 Installation
 
@@ -109,7 +130,10 @@ mongodb-agent-skills/
 │       └── test-cases.json               # Validation tests
 ├── mongodb-query-and-index-optimize/     # Query optimization skill
 ├── mongodb-ai/                            # AI/Vector Search skill
-└── mongodb-transactions-consistency/      # Transactions skill
+├── mongodb-transactions-consistency/      # Transactions skill
+├── mongodb-application-frontend/          # Frontend (Next.js + Tailwind) skill
+├── mongodb-application-backend/           # Backend (Python + FastAPI) skill
+└── mongodb-application-agentic/           # Agentic AI (LangGraph + MCP) skill
 ```
 
 ## 🎓 Example Usage
