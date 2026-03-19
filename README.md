@@ -2,7 +2,7 @@
 
 **Packaged MongoDB best practices for AI coding agents and LLMs.**
 
-This repository provides structured, up-to-date guidance across seven MongoDB domains — four database-focused and three application-focused — designed to bridge the knowledge gap where AI assistants have outdated or incorrect information about MongoDB's evolving capabilities.
+This repository provides structured, up-to-date guidance across eight MongoDB domains — four database-focused, three application-focused, and one cross-cutting planning workflow — designed to bridge the knowledge gap where AI assistants have outdated or incorrect information about MongoDB's evolving capabilities.
 
 ## 🎯 What Are Agent Skills?
 
@@ -64,6 +64,13 @@ Standards for building agentic AI applications and chatbots with MongoDB.
 **Use when**: Building chatbots, conversational agents, or agentic AI workflows with MongoDB.
 
 **Key topics**: LangChain + LangGraph, MongoDBSaver (checkpointing), MongoDBStore (long-term memory), MongoDB MCP, Claude prompting best practices.
+
+### 8. [application-deployment-basic](./application-deployment-basic/)
+Pre-build planning workflow for any application. Plan-first approval gate + `PROMPT.md` generation.
+
+**Use when**: A user asks to "build", "create", or "implement" any application or feature — regardless of stack.
+
+**Key topics**: Plan-first approval (8-section plan format), `PROMPT.md` generation (LLM system prompt for the project), Claude XML-tag prompting, behavior rules (action policy, safety, parallel tools).
 
 ## 🚀 Installation
 
@@ -133,7 +140,13 @@ mongodb-agent-skills/
 ├── mongodb-transactions-consistency/      # Transactions skill
 ├── mongodb-application-frontend/          # Frontend (Next.js + Tailwind) skill
 ├── mongodb-application-backend/           # Backend (Python + FastAPI) skill
-└── mongodb-application-agentic/           # Agentic AI (LangGraph + MCP) skill
+├── mongodb-application-agentic/           # Agentic AI (LangGraph + MCP) skill
+└── application-deployment-basic/          # Pre-build planning workflow skill
+    ├── SKILL.md
+    ├── AGENTS.md
+    └── references/
+        ├── planning.md                    # Plan format + approval gate
+        └── prompt-file.md                 # PROMPT.md generation rules
 ```
 
 ## 🎓 Example Usage
