@@ -120,6 +120,22 @@ app = FastAPI(lifespan=lifespan)
 
 ---
 
+## HIGH: README-Driven Documentation
+
+> **Every implementation must include a `README.md`.** It is the single source of truth for setup, configuration, and usage. Keep it updated as the project evolves.
+
+A complete `README.md` must include:
+- Project overview (1–2 sentences)
+- Prerequisites (Python version, MongoDB, env vars needed)
+- Setup steps (`python -m venv venv`, `pip install -r requirements.txt`, `cp .env.example .env`)
+- How to seed (`python -m scripts.seed`)
+- How to run (`uvicorn app.main:app --reload`)
+- Environment variables table
+
+**Avoid creating additional `.md` files.** Almost all documentation belongs in `README.md`. A separate file is only justified for something like a complex data migration guide or a large API contract — these are rare.
+
+---
+
 ## MEDIUM: Code Quality
 
 | Element | Convention |

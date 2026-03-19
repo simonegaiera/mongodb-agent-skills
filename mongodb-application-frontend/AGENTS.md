@@ -107,6 +107,21 @@ export default async function DocumentList() {
 
 ---
 
+## HIGH: README-Driven Documentation
+
+> **Every implementation must include a `README.md`.** It is the single source of truth for setup, configuration, and usage. Keep it updated as the project evolves.
+
+A complete `README.md` must include:
+- Project overview (1–2 sentences)
+- Prerequisites (Node version, env vars needed)
+- Setup steps (`npm install`, `cp .env.example .env`, etc.)
+- How to run (`npm run dev`)
+- Environment variables table
+
+**Avoid creating additional `.md` files.** Almost all documentation belongs in `README.md`. A separate file is only justified for something like a complex data migration guide or a large API contract — these are rare.
+
+---
+
 ## MEDIUM: Code Quality
 
 | Element | Convention |

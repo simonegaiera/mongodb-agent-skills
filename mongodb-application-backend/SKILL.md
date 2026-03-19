@@ -62,6 +62,8 @@ Apply these companion skills when working on the database layer:
 
 > **One router per resource** — Each domain entity gets its own router file under `app/routers/`.
 
+> **One README** — Every implementation includes a `README.md` with setup instructions, environment variables, and how to run the app and seed script. Keep it updated as the project evolves. Avoid creating additional `.md` files — almost all documentation belongs in `README.md`.
+
 ## Instructions
 
 When building backend features for a MongoDB application:
@@ -72,5 +74,6 @@ When building backend features for a MongoDB application:
 4. Read `references/code-quality.md` for naming, typing, environment variables, and logging
 5. Consult the `mongodb-schema-design` skill when designing collections or data models
 6. Consult the `mongodb-query-and-index-optimize` skill when writing queries or creating indexes
-7. If requirements are ambiguous, ask the user to clarify before generating code
+7. Always create or update `README.md` with setup steps, env vars, seed command, and how to run the API
+8. If requirements are ambiguous, ask the user to clarify before generating code
 

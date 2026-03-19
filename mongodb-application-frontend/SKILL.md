@@ -49,6 +49,8 @@ Standards for building frontend applications with **Next.js (App Router)**, **Re
 
 > **Small, focused components** — One responsibility per component. Compose via children and custom hooks.
 
+> **One README** — Every implementation includes a `README.md` with setup instructions, environment variables, and usage. Keep it updated as the project evolves. Avoid creating additional `.md` files — almost all documentation belongs in `README.md`.
+
 ## Instructions
 
 When building frontend features for a MongoDB application:
@@ -57,5 +59,6 @@ When building frontend features for a MongoDB application:
 2. Read `references/styling.md` for the `globals.css` setup, CSS variables, and Tailwind usage rules
 3. Read `references/components.md` for server vs client component decisions and component patterns
 4. Read `references/code-quality.md` for naming, error handling, and import conventions
-5. If requirements are ambiguous, use the ask questions tool to clarify before generating code
+5. Always create or update `README.md` with setup steps, env vars, and how to run the project
+6. If requirements are ambiguous, use the ask questions tool to clarify before generating code
 
